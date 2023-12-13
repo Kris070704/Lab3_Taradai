@@ -1,0 +1,215 @@
+/* styles/style.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+form {
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input,
+textarea,
+select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #333;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+/* Add styles for radio and checkbox groups */
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+/* Add some spacing between radio and checkbox options */
+p {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+/* Adjust styling for checkbox and radio labels */
+input[type="checkbox"] + label,
+input[type="radio"] + label {
+    margin-left: 5px;
+}
+
+/* Add styling for form reset button */
+button[type="reset"] {
+    background-color: #ccc;
+    color: #333;
+    margin-left: 10px;
+}
+
+.achievement {
+    margin-bottom: 20px;
+}
+
+.achievement img {
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.achievement h2 {
+    margin-top: 10px;
+}
+
+/* Optional: Add some spacing between sections for better readability */
+.achievement + .achievement {
+    margin-top: 20px;
+}
+
+/* Кнопка прокрутки вгору */
+#scroll-to-top {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  background-color: #3498db;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+#scroll-to-top:hover {
+  background-color: #2980b9;
+}
+
+/* Анімація з'явлення/зникнення кнопки при прокрутці */
+body {
+  scroll-behavior: smooth;
+}
+
+body:before {
+  content: '';
+  display: block;
+  height: 40px; /* Змініть це значення, якщо потрібно зробити кнопку видимою раніше */
+}
+
+body:after {
+  content: '';
+  display: block;
+  height: 40px; /* Змініть це значення, якщо потрібно зробити кнопку видимою раніше */
+}
+
+/* Зробіть кнопку видимою при прокрутці сторінки вниз */
+body:not(:target) #scroll-to-top {
+  display: block;
+}
+
+/* Додайте стилі для підменю */
+nav ul li {
+    position: relative;
+}
+
+.submenu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+}
+
+nav ul li:hover .submenu {
+    display: block;
+}
+
+/* Стилі для елементу пошуку */
+.search-box {
+    display: flex;
+    align-items: center;
+    margin: 10px; /* Зменште величину відступів */
+    
+}
+
+.search-input {
+    padding: 6px; /* Зменште величину відступів */
+    border: none;
+    border-bottom: 2px solid #3498db;
+    margin-right: 5px; /* Зменште величину відступів */
+}
+
+.search-button {
+    padding: 6px 10px; /* Зменште величину відступів */
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search-button:hover {
+    background-color: #2980b9;
+}
+
+/* Стилі для випадаючого меню (підменю) */
+.submenu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+    background-color: #ccc; /* Колір фону */
+    padding: 10px;
+    border-radius: 5px;
+}
+
+nav ul li:hover .submenu {
+    display: block;
+}
+
+
+
